@@ -1,0 +1,16 @@
+
+
+.one {
+  background-color: red;
+  padding: 70px;
+}
+
+.two {
+  background-color: grey;
+  padding: 50px;
+}
+
+a:hover {
+ background-color: red;
+}
+

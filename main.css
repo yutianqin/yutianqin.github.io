@@ -100,16 +100,6 @@ section {
     transition: opacity 0.1s ease;
   }
 
-  /* #overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.5s ease;
-  } */
-
   .section-bg {
     /* background:url("../img/rand.jpg"); */
     background-size: cover;
@@ -566,10 +556,10 @@ section {
 --------------------------------------------------------------*/
 .hero {
     width: 100%;
-    /* background-size: cover; */
+    background-size: cover;
     position: relative;
     min-height: 60vh;
-    padding: 60px 0 60px 0;
+    padding: 0px 0px 0px 100px;
   }
   
   .hero h2 {
@@ -591,25 +581,6 @@ section {
     font-size: 20px;
     margin: auto;
     margin-top: 30px;
-  }
-  
-  .hero .btn-book-a-table {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin: auto;
-    display: inline-block;
-    padding: 12px 36px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #fff;
-    background: var(--color-primary);
-    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
-  }
-  
-  .hero .btn-book-a-table:hover {
-    background: rgba(206, 18, 18, 0.8);
-    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
   }
   
   @media (max-width: 640px) {

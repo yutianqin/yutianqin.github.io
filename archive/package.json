@@ -1,0 +1,22 @@
+{
+  "name": "wonwon4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2",
+    "glightbox": "^3.2.0",
+    "swiper": "^8.4.5"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

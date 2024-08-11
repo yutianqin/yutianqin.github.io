@@ -25,8 +25,7 @@
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- CSS/Library File -->
-  <!-- <link href="main.css" rel="stylesheet"> -->
-  <link href="main.css" rel=“stylesheet” type=“text/css” >
+  <link href="main.css" rel="stylesheet">
   <link href="node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="node_modules/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
   <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -38,6 +37,7 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+          <!-- <img src="/img/水印.png" alt="won won kithen logo"> -->
           <h1>Yutian Qin<span>@ The U in Salt Lake City</span></h1>
         </a>
 
@@ -47,11 +47,14 @@
             <li><a href="#products">Products</a></li>
             <li><a href="#key_project">Key Projects</a></li>
             <li><a href="#gallery">Gallery</a></li>
+            <!-- <li><a href="#onlineOrder">Gift Cards</a></li> -->
             <li><a href="#about">About me</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <!-- .navbar -->
+
+        <!-- <a role="button" class="btn-book-a-table" href="#" data-bs-toggle="modal" data-bs-target="#reserveModal">Make Reservation</a> -->
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -63,6 +66,60 @@
 
 
   
+  <!--Reserve Modal-->
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h3 class="modal-title">Reserve a Table</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                      <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+                        <div class="row gy-4">
+                          <div class="col-lg-4 col-md-6">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            <div class="validate"></div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                            <div class="validate"></div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            <div class="validate"></div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            <div class="validate"></div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            <div class="validate"></div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                            <div class="validate"></div>
+                          </div>
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                          <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                          <div class="loading">Loading</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Book a Table</button></div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!--/ Reserve Modal-->
 
 
 
@@ -122,11 +179,15 @@
       <div class="swiper-wrapper">
 
 
+
         <div class="swiper-slide">
-          <a href="../img/table.jpeg" class="glightbox event-item d-flex flex-column justify-content-end" style="background-image: url(../img/table.jpeg)">
+          <a href="/img/table.jpeg" class="glightbox event-item d-flex flex-column justify-content-end" style="background-image: url(/img/table.jpeg)">
             <div class="event-item-inner">
               <h3>06/2022</h3>
               <div class="price align-self-start">Recyclable HDPE material multifunctional floor mirror</div>
+              <p class="description">
+                <!-- We host wedding receptions and cater it to your requests.   -->
+              </p>
             </div>
           </a>
         </div>
@@ -134,10 +195,13 @@
 
 
         <div class="swiper-slide">
-          <a href="../img/cup.jpeg" class="glightbox event-item d-flex flex-column justify-content-end" style="background-image: url(../img/cup.jpeg)">
+          <a href="/img/cup.jpeg" class="glightbox event-item d-flex flex-column justify-content-end" style="background-image: url(/img/cup.jpeg)">
             <div class="event-item-inner">
               <h3>11/2020</h3>
               <div class="price align-self-start">Cute press pump cup</div>
+              <p class="description">
+                <!-- We host wedding receptions and cater it to your requests.   -->
+              </p>
             </div>
           </a>
         </div>
@@ -149,6 +213,9 @@
             <div class="event-item-inner">
               <h3>05/2019</h3>
               <div class="price align-self-start">Medical Lip Cleaner</div>
+              <p class="description">
+
+              </p>
             </div>
           </a>
         </div> -->
@@ -156,10 +223,13 @@
 
 
         <div class="swiper-slide">
-          <a href="/img/bottle.jpeg" class="glightbox event-item d-flex flex-column justify-content-end" style="background-image: url(../img/bottle.jpeg)">
+          <a href="/img/bottle.jpeg" class="glightbox event-item d-flex flex-column justify-content-end" style="background-image: url(/img/bottle.jpeg)">
             <div class="event-item-inner">
               <h3>08/2021</h3>
               <div class="price align-self-start">Portable thermos vacuum cup</div>
+              <p class="description">
+                <!-- We host wedding receptions and cater it to your requests.   -->
+              </p>
             </div>
           </a>
         </div>
@@ -167,14 +237,18 @@
 
 
         <div class="swiper-slide">
-          <a href="/img/coffeemachine.jpeg" class="glightbox event-item d-flex flex-column justify-content-end" style="background-image: url(../img/coffeemachine.jpeg)">
+          <a href="/img/coffeemachine.jpeg" class="glightbox event-item d-flex flex-column justify-content-end" style="background-image: url(/img/coffeemachine.jpeg)">
             <div class="event-item-inner">
               <h3>10/2019</h3>
               <div class="price align-self-start">Automatic espresso machine</div>
+              <p class="description">
+                <!-- We host wedding receptions and cater it to your requests.   -->
+              </p>
             </div>
           </a>
         </div>
         <!-- End Event item -->
+
 
       </div>
       <div class="swiper-pagination"></div>
@@ -582,4 +656,3 @@
 </body>
 
 </html>
-

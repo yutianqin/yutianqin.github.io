@@ -24,6 +24,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Stamp last-updated date
+        run: |
+          DATE=$(TZ="America/Denver" date "+%b %d, %Y %H:%M MT")
+          sed -i "s/Last updated: .*/Last updated: $DATE/" index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

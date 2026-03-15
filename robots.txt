@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yutianqin.github.io/sitemap.xml
+Sitemap: https://yutianqin.com/sitemap.xml
